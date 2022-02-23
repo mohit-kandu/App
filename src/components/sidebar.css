@@ -1,0 +1,137 @@
+.sidebar{
+    padding-block:2em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+.sidebar-header{
+    display: flex;
+    width: 80%;
+    margin-inline:auto;
+}
+.sidebar-header div h1{
+    /* font-size: xx-large; */
+    font-size: clamp(1rem,1.75rem,2rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.sidebar-header p{
+    font-size: clamp(1rem,1.5rem,2rem);
+    border-radius: 50%;
+    padding:.125em .5em;
+    text-align: center;
+    background-color: var(--blue_color);
+    font-weight: 600;
+    margin-inline-end:.5em;
+}
+.collapse-sidebar{
+    margin-inline-start: auto;  
+    align-self: center;
+}
+/* side bar items */
+.sidebar-items-container{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-start:1em;
+}
+.sidebar-items{
+    color:var(--text_grey);
+    font-weight: 600;
+    gap:1.5em;
+    padding-block:.75em;
+    margin-block:.25em;
+    padding-inline: .5em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    transition: all 250ms ease;
+    border:2px solid transparent;
+    border-radius: 1em;
+
+}
+.sidebar-items:hover{
+    border:2px solid var(--black_light_color)
+}
+.sidebar-items span{
+    font-size: 1.1rem;
+}
+.sidebar-items img{
+    width: 1.3em;
+    height: 1.3em;
+    
+}
+.sidebar-active-item{
+    background-color: var(--black_light_color);
+    color:#fff;
+    border-radius: 1em;
+    padding-inline-start:1em;
+    margin-inline-start:1em;
+    transition: all 250ms ease;
+
+}
+.sidebar-active-item img{
+    filter:brightness(200%);
+}
+/* sidebar footer */
+.sidebar_footer{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-inline:auto;
+    margin-block-start:4em;
+    gap:.5em;
+}
+.sidebar_footer div:first-child{
+    display: flex;
+    /* gap:.25em; */
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--black_light_color);
+    border-radius: .75em;
+    padding:.25em 1em;
+}
+.sidebar_footer div:nth-child(2) p{
+    padding-block:.5em;
+
+}
+.sidebar_footer div:first-child p{
+    margin:0;
+}
+.sidebar_footer div p{
+    padding:.25em .5em;
+}
+
+.blue-bg{
+    border-radius: 50%;
+    background-color: var(--blue_color);
+    font-size: .8em;
+}
+.buy-xyz{
+cursor: pointer;
+padding:.25em 0;
+}
+
+.buy-xyz p{
+    margin:0;
+    background-color: var(--light_blue_color);
+    color: var(--blue_color);
+    border-radius:.75em;
+    font-weight: 600;
+}
+
+.bg_light_black{
+    background-color: var(--black_light_color);
+    border-radius: .75em;
+    padding:0 .125em ;
+    display: flex;
+    gap:.25em;
+}
+
+@media screen and (max-width:991px) {
+    .sidebar{
+        visibility: hidden;
+    }
+}

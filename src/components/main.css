@@ -1,0 +1,15 @@
+.main{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.mainbody{
+    border-inline:2px solid rgba(153, 153, 153, 0.315);
+    min-height: 100vh;
+    padding-inline:3em;
+}
+
+/* @media screen and (max-width:991px) {
+    .main{
+        grid-template-columns: ;
+    }
+} */
